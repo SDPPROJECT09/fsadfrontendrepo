@@ -1,0 +1,194 @@
+/* Main container */
+div[style*="display: flex"] {
+  min-height: 100vh;
+  width: 100%;
+  margin: auto;
+}
+
+/* Vertical Navbar */
+.navbarv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #8ed6e6, rgb(0, 4, 255));
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+
+/* Navigation links list */
+.nav-linksv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+/* Individual nav links */
+.nav-linksv li a {
+  display: block;
+  padding: 12px 15px 10px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+/* Hover effect */
+.nav-linksv li a:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* Logout link */
+.nav-linksv li:last-child a {
+  background: #dc3545;
+  color: white;
+}
+
+.nav-linksv li:last-child a:hover {
+  background: #c82333;
+}
+
+/* Collapsed navbar */
+.navbarv.collapsed {
+  width: 0;
+  overflow: hidden;
+  transition: width 0.3s;
+}
+
+div[style*="display: flex"].collapsed {
+  margin-left: 0;
+}
+
+/* Toggle button */
+.toggle-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.slider {
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(90deg, #0975da, #55c6e5, #1060e2);
+  border: 1px solid #0ff;
+
+  border-radius: 10px;
+}
+
+.slider-content {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 1.5rem;
+
+  color: #e8f406;
+  animation: slideRight 30s linear infinite;
+}
+
+@keyframes slideRight {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Footer Container */
+.footer-container {
+  background-color: #898787;
+  padding: 40px 20px;
+  border-top: 1px solid #716f6f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Footer Grid Layout */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+/* Footer Section Headings */
+.footer-heading {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Footer Links */
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  color: #666;
+}
+
+.footer-list li:hover {
+  color: #e63946;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+  border-top: 1px solid #e8e8e8;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
