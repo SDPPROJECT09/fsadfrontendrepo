@@ -17,7 +17,7 @@ export default function MainNavBar()
   return (
     <div>
       <nav className='navbarh' >
-        <div className='logo'><img src='src\main\CraveIn.jpg' alt='Image Not Found' height={100} width={100}/></div>
+        <div className='logo'><img src='/CraveIn.jpg' alt='Image Not Found' height={100} width={100}/></div>
         <ul className='nav-linksh'>
             <li className='dropdown'>
               <button><span>LogIn ▾</span></button>
