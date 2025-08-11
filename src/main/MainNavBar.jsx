@@ -49,7 +49,7 @@ export default function MainNavBar()
         <Route path='*' element={<NotFound/>} exact/>
       </Routes>
       <video autoPlay loop muted className="video-background">
-                <source src="src\main\food.mp4" type="video/mp4" />
+                <source src="/food.mp4" type="video/mp4" />
       </video>
     </div>
   )
