@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import config from './config';
-import './customer/Customer.css'
+import './customer/customer.css'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
