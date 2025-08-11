@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Customer.css';
+import './customer.css';
 
 export default function CustomerHome() {
   const [customer, setCustomer] = useState("");

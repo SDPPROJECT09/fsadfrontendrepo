@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import './Customer.css';
+import './customer.css';
 import config from '../config';
 
 export default function BookItem() 

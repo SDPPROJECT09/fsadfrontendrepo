@@ -1,5 +1,5 @@
 import React from 'react'
-import '../customer/Customer.css'
+import '../customer/customer.css'
 
 export default function ManagerHome() {
   return (

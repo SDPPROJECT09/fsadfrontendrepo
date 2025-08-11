@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import './Customer.css';
+import './customer.css';
 import config from '../config';
 
 export default function BookItems() {

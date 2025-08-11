@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import config from '../config';
-import '../customer/Customer.css'
+import '../customer/customer.css'
 
 export default function AdminHome() {
   const [customerCount, setCustomerCount] = useState(0);
