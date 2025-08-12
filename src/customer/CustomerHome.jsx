@@ -14,15 +14,15 @@ export default function CustomerHome() {
   }, []);
 
   const foodItems = [
-    { id: 1, name: 'Biryani', image: 'src/customer/images/biryani.jpg' },
-    { id: 2, name: 'Pizza', image: 'src/customer/images/pizza.png' },
-    { id: 3, name: 'Burger', image: 'src/customer/images/Burger.jpg' },
-    { id: 4, name: 'Sushi', image: 'src/customer/images/sushi.webp' },
-    { id: 5, name: 'Pasta', image: 'src/customer/images/pasta.jpg' },
-    { id: 6, name: 'Salad', image: 'src/customer/images/salad.jpg' },
-    { id: 7, name: 'Dessert', image: 'src/customer/images/desert.jpeg' },
-    { id: 8, name: 'Steak', image: 'src/customer/images/steak.jpeg' },
-    { id: 9, name: 'Tacos', image: 'src/customer/images/tacos.webp' },
+    { id: 1, name: 'Biryani', image: '/images/biryani.jpg' },
+    { id: 2, name: 'Pizza', image: '/images/pizza.png' },
+    { id: 3, name: 'Burger', image: '/images/Burger.jpg' },
+    { id: 4, name: 'Sushi', image: '/images/sushi.webp' },
+    { id: 5, name: 'Pasta', image: '/images/pasta.jpg' },
+    { id: 6, name: 'Salad', image: '/images/salad.jpg' },
+    { id: 7, name: 'Dessert', image: '/images/desert.jpeg' },
+    { id: 8, name: 'Steak', image: '/images/steak.jpeg' },
+    { id: 9, name: 'Tacos', image: '/images/tacos.webp' },
   ];
 
   return (
@@ -30,7 +30,7 @@ export default function CustomerHome() {
       {/* Hero Image */}
       <div className="image-with-text">
         <img 
-          src="src/customer/display.jpg" 
+          src="/display.jpg" 
           style={{ width: '100%', height: '300px', objectFit: 'cover', opacity: 0.7 }} 
         />
       </div>

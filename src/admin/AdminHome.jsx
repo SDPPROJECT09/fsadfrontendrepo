@@ -31,7 +31,7 @@ export default function AdminHome() {
       {/* Hero Image */}
       <div className="image-with-text">
         <img 
-          src="src/customer/display.jpg" 
+          src="/display.jpg" 
           style={{ width: '1500px', height: '300px', objectFit: 'cover', opacity: 0.7 }} 
         />
         <h3 style={{textAlign:"center"}}> </h3>
