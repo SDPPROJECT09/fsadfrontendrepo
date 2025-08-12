@@ -1,6 +1,6 @@
 const config = 
 {
-    "url":"http://localhost:2006"
+    "url":"https://springbootsdpproject2006.up.railway.app/"
 }
 
 export default config
