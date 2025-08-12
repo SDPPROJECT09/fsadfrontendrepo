@@ -23,7 +23,7 @@ export default function MainNavBar()
               <button><span>LogIn ▾</span></button>
               <ul className='dropdown-menu'>
                 <li><Link to='/CustomerLogin'>Customer</Link></li>
-                <li><Link to='/AgentLogin'>Delivery Agent</Link></li>
+                <li><Link to='/AgentLogin'>delivery Agent</Link></li>
                 <li><Link to='/ManagerLogin'>Manager</Link></li>
                 <li><Link to='/AdminLogin'>Admin</Link></li>
               </ul>
